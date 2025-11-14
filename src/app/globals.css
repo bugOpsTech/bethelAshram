@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  /* fonts */
+  --font-oxanium: ui-sans-serif;
+  --font-bubblegum: ui-sans-serif;
+  --font-merriweather: serif;
+  --font-bodoni: serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-merriweather);
+  --font-mono: var(--font-merriweather);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-merriweather), serif;
+}
+
+input, label {
+  font-family: var(--font-bubblegum);
+}
