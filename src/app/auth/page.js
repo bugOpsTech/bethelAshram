@@ -49,13 +49,13 @@ export default function AuthPage() {
 
               <div className="text-center text-black my-7 flex flex-row gap-2" style={{fontFamily: "var(--font-bubblegum)"}}>
                 <div className="bg-gray-200 p-2 rounded-full hover:bg-cyan-300 cursor-pointer">
-                  <Image src="/assets/apple.svg" width={35} height={30} alt="login with Apple" title="Login with Google"></Image>
+                  <Image src="/assets/apple.svg" width={35} height={30} alt="apple" title="Login with Apple" className=" hover:scale-120 transition-transform duration-300"></Image>
                 </div>
                 <div className="bg-gray-200 p-2 rounded-full hover:bg-cyan-300 cursor-pointer">
-                  <Image src="/assets/google.svg" width={35} height={42} alt="login with google" title="Login with Google"></Image>
+                  <Image src="/assets/google.svg" width={35} height={42} alt="google" title="Login with Google" className="hover:scale-120 transition-transform duration-300"></Image>
                 </div>
                 <div className="bg-gray-200 p-2 rounded-full hover:bg-cyan-300 cursor-pointer">
-                  <Image src="/assets/facebook.svg" width={35} height={42} alt="login with google" title="Login with Google"></Image>
+                  <Image src="/assets/facebook.svg" width={35} height={42} alt="facebook" title="Login with Facebook" className="hover:scale-120 transition-transform duration-300"></Image>
                 </div>
               </div>
 

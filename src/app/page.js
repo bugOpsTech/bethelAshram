@@ -1,19 +1,17 @@
 import '@/app/globals.css'
-import About from '@/components/About';
 import Header from '@/components/Header';
-// import Footer from '@/components/Footer';
+import Landing from './client/Landing';
 
 export default function Home() {
   return (
     <>
       <div className=' bg-white'> 
-        <div className="flex flex-1 min-h-screen">
-            <Header />
-        </div>
+          <Header />
+          <main className='z-10'>
+            <Landing />
+          </main>
       </div>
 
-      {/* <About /> */}
-      {/* <Footer /> */}
     </>
    
   );

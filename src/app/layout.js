@@ -1,4 +1,4 @@
-import { Oxanium, Bubblegum_Sans, Merriweather,Bodoni_Moda_SC } from "next/font/google";
+import { Oxanium, Bubblegum_Sans, Merriweather,Bodoni_Moda_SC, Dancing_Script } from "next/font/google";
 import "./globals.css";
 
 const oxanium = Oxanium({
@@ -23,6 +23,11 @@ const bodoni = Bodoni_Moda_SC({
   subsets: ["latin"],
   weight: ["900"]
 });
+const dancing = Dancing_Script({
+  variable: "--font-dancing",
+  subsets: ["latin"],
+  weight: ["700"]
+});
 
 export const metadata = {
   title: "Bethel Ashram",
@@ -33,7 +38,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${oxanium.variable} ${bubblegum.variable} ${merriweather.variable} ${bodoni.variable} antialiased`}
+        className={`${oxanium.variable} ${bubblegum.variable} ${merriweather.variable} ${bodoni.variable} ${dancing.variable} antialiased`}
       >
         {children}
       </body>
