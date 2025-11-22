@@ -4,11 +4,11 @@
 :root {
   --background: #ffffff;
   --foreground: #000000;
+
   /* fonts */
-  --font-oxanium: ui-sans-serif;
   --font-bubblegum: ui-sans-serif;
   --font-merriweather: serif;
-  --font-bodoni: serif;
+  --font-smooch: ui-sans-serif;
 }
 
 @theme inline {
@@ -25,10 +25,17 @@
   }
 }
 
+.outlineText {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  text-transform: uppercase;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-merriweather), serif;
+  font-family: var(--font-smooch), sans-serif;
 }
 
 input, label {

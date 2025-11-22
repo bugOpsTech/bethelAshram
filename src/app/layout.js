@@ -1,11 +1,5 @@
-import { Oxanium, Bubblegum_Sans, Merriweather,Bodoni_Moda_SC, Dancing_Script } from "next/font/google";
+import { Bubblegum_Sans, Merriweather, Dancing_Script, Smooch_Sans } from "next/font/google";
 import "./globals.css";
-
-const oxanium = Oxanium({
-  variable: "--font-oxanium",
-  subsets: ["latin"],
-  weight: ["400", "600", "700"]
-});
 
 const bubblegum = Bubblegum_Sans({
   variable: "--font-bubblegum",
@@ -18,15 +12,17 @@ const merriweather = Merriweather({
   subsets: ["latin"],
   weight: ["400","700"]
 });
-const bodoni = Bodoni_Moda_SC({
-  variable: "--font-bodoni",
-  subsets: ["latin"],
-  weight: ["900"]
-});
+
 const dancing = Dancing_Script({
   variable: "--font-dancing",
   subsets: ["latin"],
   weight: ["700"]
+});
+
+const smooch = Smooch_Sans({
+  variable: "--font-smooch",
+  subsets: ["latin"],
+  weight: ["600"]
 });
 
 export const metadata = {
@@ -38,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${oxanium.variable} ${bubblegum.variable} ${merriweather.variable} ${bodoni.variable} ${dancing.variable} antialiased`}
+        className={`${bubblegum.variable} ${merriweather.variable} ${dancing.variable} ${smooch.variable} antialiased`}
       >
         {children}
       </body>
