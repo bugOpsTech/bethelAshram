@@ -1,5 +1,6 @@
 import { Bubblegum_Sans, Merriweather, Dancing_Script, Smooch_Sans } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const bubblegum = Bubblegum_Sans({
   variable: "--font-bubblegum",
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${bubblegum.variable} ${merriweather.variable} ${dancing.variable} ${smooch.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
