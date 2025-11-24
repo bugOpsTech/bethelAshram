@@ -103,7 +103,7 @@ export default function Header() {
         </Link>
 
         {/* ---------- DESKTOP NAVBAR ---------- */}
-        <nav className="hidden lg:flex items-center space-x-8 text-[20px]" style={{fontFamily:"var(--font-bubblegum)"}}>
+        <nav className="hidden lg:flex items-center space-x-8 text-[15px]" style={{fontFamily:"var(--font-bubblegum)"}}>
           {Object.keys(menuData).map((key) => {
             const section = menuData[key];
             return (
@@ -179,7 +179,7 @@ export default function Header() {
             href="/auth?insideRegister=true"
             className="flex items-center gap-1 px-5 py-1 text-xl bg-white text-black rounded-full shadow-xl hover:bg-blue-600 hover:text-white transition"
           >
-            - Login <IoMdLogIn />
+            - Donate Now <IoMdLogIn />
           </Link>
         </div>
 

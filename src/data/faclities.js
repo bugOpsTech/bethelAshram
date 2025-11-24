@@ -20,7 +20,7 @@ const facilities = [
   },
   {
     icon: "/assets/medical.svg",
-    title: "24×7 Medical Services",
+    title: "24x7 Medical Services",
     desc:
       "Our trained medical team provides timely treatment, emergency support and compassionate healthcare.",
   },

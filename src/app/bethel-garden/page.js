@@ -1,10 +1,10 @@
 import Image from "next/image";
 import facilities from "@/data/faclities";
-import Donation from "@/components/Donation";
+import Donation from "@/components/BankDetails";
 
 export default function BGarden() {
   return (
-    <div className="w-full min-h-screen bg-blue-300">
+    <div className="w-full min-h-screen bg-pink-600">
       {/* hero */}
       <section className="relative w-full min-h-[80vh] bg-[url('/assets/bgardenBg.jpg')] bg-cover bg-center shadow-2xl shadow-white">
         <div className="flex flex-col text-center px-40 pt-30 pb-1">
@@ -60,7 +60,7 @@ export default function BGarden() {
         </div>
       </section>
       {/* about */}
-      <section className="relative w-full pt-50 pb-10">
+      <section className="w-full pt-50 pb-10">
         <div className="w-full max-w-10xl flex flex-col lg:flex-row">
           <div className="w-full flex flex-col justify-center items-start ps-15 ">
             <h1 className="text-2xl">What is Bethel Garden ? </h1>
